@@ -1,0 +1,4 @@
+.main {
+  grid-column: center-start / center-end;
+  margin: 2rem 0;
+}

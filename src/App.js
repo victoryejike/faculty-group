@@ -1,15 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Main from './pages/Main/Main';
+import Sidebar from './pages/Sidebar/Sidebar';
 
 function App() {
   return (
-    <div className="grid grid-cols-3 gap-4">
-      <div>1</div>
-      <div>2</div>
-      <div>2</div>
-      <div>2</div>
-      <div>2</div>
-      <div>2</div>
+    <div className="App">
+      <Sidebar />
+      <Main />
     </div>
   );
 }

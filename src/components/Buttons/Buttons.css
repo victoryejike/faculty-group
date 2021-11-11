@@ -1,0 +1,23 @@
+/* .button-container {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.877);
+  display: inline-block;
+  border-radius: 30px;
+  background-color: #19222d;
+} */
+
+.button {
+  background-color: #eb5289;
+  width: 140px;
+  height: 42px;
+  border-radius: 305px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: inherit;
+}
+
+.btn-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

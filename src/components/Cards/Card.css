@@ -1,0 +1,43 @@
+.card-container {
+  background-image: linear-gradient(126.51deg, #f84686 2.33%, #c13660 100%);
+  border-radius: 8px;
+  width: 360px;
+  height: 416px;
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.APY {
+  justify-content: space-around;
+  background-color: rgba(103, 22, 48);
+  border-radius: 26px;
+  margin: 0 36px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  z-index: 10;
+  position: relative;
+}
+
+.pool {
+  background-image: linear-gradient(126.51deg, #ff5977 2.33%, #b93684 100%);
+  border-radius: 8px;
+  height: 366px;
+  width: 328px;
+  margin: -20px auto;
+  z-index: -4;
+}
+
+.pool-details {
+  padding: 0 10px;
+  border-bottom: 1px solid grey;
+}
+
+.pool-details:first-child {
+  padding: 20px 10px 0px 10px;
+}

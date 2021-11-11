@@ -1,0 +1,11 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.header-subgrid {
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
+  justify-content: space-between;
+  align-items: center;
+}
