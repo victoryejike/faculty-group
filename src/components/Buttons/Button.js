@@ -1,6 +1,8 @@
 import React from 'react';
 import './Buttons.css';
 
+//Resuable Buttoms
+
 const Buttons = ({ text, active, sm, lg, xs, xl, children: icon, icon2 }) => {
   return (
     <div className='button-container'>
