@@ -1,4 +1,27 @@
 .main {
-  grid-column: center-start / center-end;
-  margin: 2rem 0;
+  background-color: #222c38;
+  grid-column: full-start / full-end;
+  padding: 2rem 5rem;
+
+  /* display: grid;
+  grid-template-columns: 1fr min-content minmax(6rem, min-content) 1fr; */
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.main-text > small {
+  color: #ff5977;
+  font-family: inherit;
+}
+
+.main-text > h1 {
+  margin: 0;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }

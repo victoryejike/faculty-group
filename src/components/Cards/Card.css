@@ -11,6 +11,21 @@
   justify-content: space-between;
   align-items: center;
 }
+.liquidity {
+  justify-content: space-around;
+  margin: 0 20px;
+  height: 70px;
+}
+
+.token-pairs > p {
+  font-size: 23px;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+.token-pairs > * {
+  padding: 10px;
+}
 
 .APY {
   justify-content: space-around;

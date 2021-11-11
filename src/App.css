@@ -1,9 +1,14 @@
 .App {
   display: grid;
-  grid-template-rows: 100vh min-content 40vw repeat(3, min-content);
+  grid-template-rows: max-content min-content;
   grid-template-columns:
     [sidebar-start] 5rem [sidebar-end full-start] minmax(6rem, 1fr)
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
     [center-end] minmax(6rem, 1fr)
     [full-end];
 }
+
+/* .main-wrapper {
+  grid-column: full-start / full-end;
+  background-color: #222c38;
+} */
