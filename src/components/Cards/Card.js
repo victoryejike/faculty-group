@@ -1,6 +1,5 @@
 import React from 'react';
 import Buttons from '../Buttons/Button';
-import Separator from '../../assets/img/Line 45.png';
 import Subtract from '../../assets/img/Subtract.png';
 import Ethereum from '../../assets/img/Union.png';
 import B from '../../assets/img/b.png';
@@ -16,11 +15,8 @@ const Cards = ({ inactive }) => {
             : <img src={Subtract} alt='POP' />
           }
         </div>
-        <div className='token-pairs flex'>
-          <p>POP!</p> 
-          <div>
-            <img src={Separator} alt='separator'/>
-          </div> 
+        <div className={inactive ? 'token-pairs token-pairs--inactive flex' : 'token-pairs flex'}>
+          <p>POP!</p>  
           <p>ETH</p>
         </div>
         <div>
