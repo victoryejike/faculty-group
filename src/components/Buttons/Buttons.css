@@ -32,8 +32,12 @@
   height: 42px;
 }
 
-.sm-btn {
+.xs-btn {
   width: 65px;
+  height: 42px;
+}
+.sm-btn {
+  width: 85px;
   height: 42px;
   /* justify-content: space-around; */
 }

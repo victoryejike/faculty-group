@@ -17,7 +17,7 @@ const Sidebar = () => {
           <div className='logo'>
             <img src={Logo} alt='logo'/>
           </div>
-          <div>
+          <div className='marketplace'>
             <img src={Marketplace3} alt='Marketplace3'/>
           </div>
           <div>

@@ -1,6 +1,6 @@
 .App {
   display: grid;
-  grid-template-rows: max-content min-content min-content;
+  grid-template-rows: max-content max-content max-content;
   grid-template-columns:
     [sidebar-start] 5rem [sidebar-end full-start] minmax(6rem, 1fr)
     [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])

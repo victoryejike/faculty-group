@@ -12,7 +12,7 @@ const Header = () => {
       <div className='header'>
         <div className='flex change-network'>
           <p>Network:</p>
-          <Buttons sm>
+          <Buttons xs>
             <img src={EthNetwork} alt='eth'/>
             <img src={DropDown} alt='dropdown'/>
           </Buttons>
