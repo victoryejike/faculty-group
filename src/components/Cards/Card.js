@@ -3,14 +3,18 @@ import Buttons from '../Buttons/Button';
 import Separator from '../../assets/img/Line 45.png';
 import Subtract from '../../assets/img/Subtract.png';
 import Ethereum from '../../assets/img/Union.png';
+import B from '../../assets/img/b.png';
 import './Card.css';
 
-const Cards = () => {
+const Cards = ({ inactive }) => {
   return (
-    <div className='card-container'>
+    <div className={inactive ? 'card-container card-container--inactive' : 'card-container'}>
       <div className='flex liquidity'>
         <div>
-          <img src={Subtract} alt='POP' />
+          {
+            inactive ? <img src={B} alt='B' />
+            : <img src={Subtract} alt='POP' />
+          }
         </div>
         <div className='token-pairs flex'>
           <p>POP!</p> 
@@ -23,34 +27,47 @@ const Cards = () => {
           <img src={Ethereum} alt='ethereum' />
         </div>
       </div>
-      <div className='flex APY'>
+      <div className={inactive ? 'flex APY APY--inactive': 'flex APY'}>
         <p>APY 334%</p>
         <p>APR 100%</p>
       </div>
-      <div className='pool'>
+      <div className={inactive ? 'pool pool--inactive' : 'pool'}>
         <div className='flex pool-details'>
           <p>Total Pool Size</p>
           <p>$200,000,000</p> 
         </div>
         <div className='flex pool-details'>
-          <p>Total Pool Size</p>
-          <p>$200,000,000</p>
+          <p>Total Value Offered</p>
+          <p>$125,846,891</p>
         </div>
         <div className='flex pool-details'>
-          <p>Total Pool Size</p>
-          <p>$200,000,000</p>
+          <p>Total Volume Matched</p>
+          <p>$ 60,482</p>
         </div>
         <div className='flex pool-details'>
-          <p>Total Pool Size</p>
-          <p>$200,000,000</p>
+          <p>Time Remaining</p>
+          <p>90 days</p>
         </div>
-        <div>
+        <div className='flex farm'>
           <p>Farmed POP</p>
-          <progress id="file" value="900" max="1000"> 32% </progress>
+          <progress className={inactive? "progress--inactive" : 'progress'} value="900" max="1000"></progress>
+          <p className='progress-value'>900/1000</p>
         </div>
-        <div>
-          <Buttons text='Single sided Offer'/>
-          <Buttons text='Farm'/>
+        <div className='flex btn-group'>
+        {
+          inactive ? (
+            <>
+              <Buttons text='Single sided Offer' xl />
+              <Buttons text='Farm' sm/>
+            </>
+          ) : (
+            <>
+              <Buttons text='Single sided Offer' active xl />
+              <Buttons text='Farm' active sm/>
+            </>
+          )
+        }
+          
         </div>
       </div>
     </div>

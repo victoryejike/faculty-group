@@ -7,10 +7,10 @@ const Body = () => {
     <>
       <div className='body'>
         <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
-        <Cards/>
+        <Cards inactive/>
+        <Cards inactive/>
+        <Cards inactive/>
+        <Cards inactive/>
         <Cards/>
       </div>
     </>

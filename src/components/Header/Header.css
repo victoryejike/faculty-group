@@ -3,9 +3,41 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-.header-subgrid {
+.flex {
   display: flex;
   /* grid-template-columns: repeat(2, 1fr); */
   justify-content: space-between;
   align-items: center;
+}
+
+.change-network {
+  justify-content: space-between;
+  background-color: #19222d;
+  width: 187px;
+  height: 52px;
+  border-radius: 30px;
+  color: #fff;
+  padding: 0 5px;
+}
+
+.change-network > p {
+  padding: 0 10px;
+}
+
+.header-subgrid,
+.wallet {
+  background-color: #19222d;
+  width: 170px;
+  border-radius: 30px;
+  padding: 5px 0;
+}
+
+.wallet {
+  width: 378px;
+  color: #fff;
+  padding: 0 15px;
+}
+
+.wallet > p {
+  margin-right: 16px;
 }

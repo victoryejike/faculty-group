@@ -7,13 +7,12 @@
 
 .button {
   background-color: #eb5289;
-  width: 140px;
-  height: 42px;
   border-radius: 305px;
   outline: none;
   border: none;
   color: #fff;
   font-family: inherit;
+  font-size: 16px;
 }
 
 .btn-flex {
@@ -21,3 +20,33 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.lg-btn {
+  width: 140px;
+  height: 42px;
+  justify-content: space-around;
+}
+
+.xl-btn {
+  width: 167px;
+  height: 42px;
+}
+
+.sm-btn {
+  width: 85px;
+  height: 42px;
+  /* justify-content: space-around; */
+}
+
+.active {
+  background-color: #fff;
+  color: #eb5289;
+}
+
+.btn-text {
+  font-size: 16px;
+}
+
+/* .pad {
+  padding: 0 4px;
+} */

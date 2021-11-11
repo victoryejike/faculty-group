@@ -6,6 +6,10 @@
   color: #fff;
 }
 
+.card-container--inactive {
+  background-image: linear-gradient(126.51deg, #303f51 2.33%, #2c3847 100%);
+}
+
 .flex {
   display: flex;
   justify-content: space-between;
@@ -29,7 +33,7 @@
 
 .APY {
   justify-content: space-around;
-  background-color: rgba(103, 22, 48);
+  background-color: rgb(103, 22, 48);
   border-radius: 26px;
   margin: 0 36px;
   text-align: center;
@@ -37,6 +41,10 @@
   font-weight: 500;
   z-index: 10;
   position: relative;
+}
+
+.APY--inactive {
+  background-color: #121b25;
 }
 
 .pool {
@@ -48,11 +56,80 @@
   z-index: -4;
 }
 
+.pool--inactive {
+  background-image: linear-gradient(132.75deg, #45576c 2.11%, #303f51 90.42%);
+}
+
 .pool-details {
-  padding: 0 10px;
-  border-bottom: 1px solid grey;
+  margin: 0 15px;
+  border-bottom: 1px solid #fff;
+}
+
+.pool-details:not(:first-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pool-details:not(:first-child) > p:first-child {
+  font-weight: 300;
+  font-size: 14px;
 }
 
 .pool-details:first-child {
-  padding: 20px 10px 0px 10px;
+  padding: 20px 0px 0px 0px;
 }
+
+.farm {
+  margin: 0 15px;
+  position: relative;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 197px;
+  height: 17px;
+}
+
+.progress-value {
+  position: absolute;
+  font-size: 12px;
+  bottom: 1;
+  left: 120px;
+}
+
+.progress[value]::-webkit-progress-bar {
+  background-color: #67162f;
+  border-radius: 26px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.progress--inactive[value]::-webkit-progress-bar {
+  background-color: #121b25;
+  border-radius: 26px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+.progress[value]::-webkit-progress-value {
+  background-color: #3d4e63;
+
+  border-radius: 26px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.progress--inactive[value]::-webkit-progress-value {
+  background-color: #1dafee;
+
+  border-radius: 26px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.btn-group {
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+/* .btn-group:first-child {
+  flex-grow: 2;
+  width: 167px;
+} */
